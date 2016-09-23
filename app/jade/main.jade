@@ -1,0 +1,49 @@
+
+doctype html
+
+html
+    head
+        meta(http-equiv = 'Content-Type', charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content="IE=edge,chrome=1")
+        title
+            block title
+
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        
+        link(rel='stylesheet'  href='css/normalize.css')
+        link(rel='stylesheet'  href='css/font.css')
+        link(rel='stylesheet'  href='css/jquery-ui.css' )
+        link(rel='stylesheet'  href='css/main.css' )
+        script(src='js/_plagins/jquery.min.js' defer)
+        script(src='js/_plagins/jquery-ui.min.js' defer)
+        script(src='js/js.js' defer)
+        
+        
+       
+
+    body
+        
+        .wrapper
+            
+            include _common/_header
+            include _common/_breadcrumbs
+            
+            .main-content
+                .container
+                    include _common/_sidebar
+                    include _common/_content
+            include _common/_pagination
+            include _common/_text
+        include _common/_footer
+            
+            
+            
+            
+
+                
+
+        
+
+       
+         
+        

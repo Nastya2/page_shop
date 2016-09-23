@@ -1,0 +1,67 @@
+.content
+    .sort
+        .sort__left
+            .sort__select-wrap
+                .sort__title
+                    | Сортировать по
+                .sort__select 
+                    select.sort__select-elem 
+                        - var options = ["по цене","по популярности"]
+                        each option in options
+                            option(value="").select__option= option
+        .sort__right 
+            .sort__title
+                | Вид каталога
+            .sort__view
+                ul.sort__view-list
+                    - var items =  ["rows","grids","direct"]
+                    each item in items
+                        li(class="sort__view-item sort__view_" + item data-view= item)
+                            a(href="#").sort__view-link
+                                .sort__view-icon
+    .products
+        ul#product.products__list
+            - for (var i=0; i<9; i++)
+                li.products__item
+                    .products__item-inner
+                        .products__left
+                            .products__slideshow
+                                .products__slideshow-block
+                                    a(href="#").products__slideshow-display
+                                        img(src="img/phone-big.jpg" alt="").products__slideshow-img
+                                    ul.products__slideshow-thumbs
+                                         - for (var j=0; j < 3; j++)
+                                                li.products__slideshow-item
+                                                    a(href="#").products__slideshow-link
+                                                        img(src="img/phone-small.png").products__slideshow-thumb-img
+
+                                .products__article
+                                    .products__article-word Артикул
+                                    .products__article-num 189238
+                        .products__desc
+                            .products__desc-title Samsung FT-I93011 GALAXY S 3
+                            ul.products__desc-options
+                                - var options = {"Тип симкарты":"Micro", "Количество симкарт":"1","Цвет":"Белый","ОС":"Android"};
+                                - var index = 0;
+                                - for (item in options)
+                                
+                                    li(class="products__option-item products__option-item_"  + (!(index++ % 2) ? "colored" : ''))
+                                        .products__option-key= item
+                                        .products__option-value= options[item]
+                            .products__rating
+                                ul.products__rating-stars
+                                    li.products__rating-stars-item.products__rating-stars-item_filled
+                                    li.products__rating-stars-item.products__rating-stars-item_filled
+                                    li.products__rating-stars-item.products__rating-stars-item_filled
+                                    li.products__rating-stars-item
+                                    li.products__rating-stars-item
+                                    li.products__rating-amout 3
+                        .products__right
+                            .products__info
+                                .products__price 11 290 Р
+                                    
+                            .products__info-bottom
+                                a(href="#" ).products__buy-btn В корзину
+                                .products__availability
+                                    | В наличии
+

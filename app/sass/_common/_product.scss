@@ -1,0 +1,249 @@
+.products {
+    margin-bottom: 30px;
+}
+.products__list{
+    border: 1px solid $grey;
+    border-radius:7px;
+   
+    background: #fff;
+
+.products__item{
+    border-top:  1px solid $grey;
+    
+    &:first-child{
+        border-top: 0 none;
+    }
+    
+    &:hover {
+    
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+}
+.products__item-inner{
+    padding: 19px 22px;
+    @include clearfix;
+    position: relative;
+}
+.products__left{
+    float: left;
+    width: 21%;
+}
+.products__slideshow{
+    width: 140px;
+    float: left;
+}
+.products__slideshow-block{
+    margin-bottom: 14px;
+}
+.products__slideshow-display{
+    width: 134px;
+    height: 134px;
+    border: 1px solid $grey;
+    background: #fff;
+    position: relative;
+    display: block;
+    margin-bottom: 14px;
+    border-radius:3px;
+    
+}
+.products__slideshow-img{
+    display: block;
+    max-width: 95%;
+    max-height: 95%;
+    @include absolute-center;
+    
+}
+.products__slideshow-thumbs{
+    @include clearfix;
+    margin-left: -15px;
+    
+}
+.products__slideshow-item{
+  margin-left: 15px;  
+  float: left;
+    
+    &.active {
+        .products__slideshow-link{
+            border-color:$orange;
+    }
+}
+    }
+.products__slideshow-link{
+  @extend  .products__slideshow-display;
+    width: 34px;
+    height: 34px;
+    border-radius:3px;
+    margin-bottom: 0;
+    position: relative;
+    
+    &:hover{
+      border-color: $orange;  
+    }
+}
+.products__slideshow-thumb-img{
+    display: block;
+    max-width: 85%;
+    max-height: 85%;
+    @include absolute-center;
+}
+.products__article-word{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7f7f7f;
+    
+    
+    
+}
+.products__article-num{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 16px;
+    color: #111;
+   
+    
+}
+/*--------------------descriptions---------------------*/
+.products__desc{
+    float: left;
+    width: 50%;
+    margin-left: 21px;
+    
+}
+.products__desc-title{
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'open_sanssemibold';
+    color: #010101;
+    margin-bottom: 20px;
+    padding-top: 7px;
+    
+}
+.products__desc-options{
+    margin-bottom: 14px;
+    width: 180px;
+}
+.products__option-key{
+    
+    display: inline;
+    font-size: 15px;
+    }
+
+.products__option-value{
+    
+    display: inline;
+    font-size: 15px;
+    }
+
+
+
+/*--------------stars-------------------*/
+.products__rating-stars{
+    
+   display: inline-block;
+    vertical-align: middle;
+        }
+
+$stars-map: sprite-map('stars/*.png', $spacing: 70px);
+
+.products__rating-stars-item{
+    display: inline-block;
+    vertical-align: middle;
+    @include get-sprite($stars-map, empty);
+    
+    &.products__rating-stars-item_filled{
+      @include get-sprite($stars-map, filled);
+}
+
+}
+.products__rating-amout{
+   display: inline-block;
+    vertical-align: middle;
+    color: #fbfbfb;
+    font-size: 12px;
+    line-height: 15px;
+    width: 30px;
+    background: #b5beca;
+    border-radius:20px;
+    margin-left: 8px;
+    text-align: center;
+    
+}
+
+.product__right{
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    bottom: 23px;
+    text-align: right;
+    
+}
+.product__info{
+    padding-left: 25px;
+    border-left: 1px solid $grey;
+    height: 100%;
+}
+.product__info-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.products__right {
+    width: 29%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
+.products__info {
+    position: relative;
+    height: 100%;
+    border-left: 1px solid #dee1e4;
+    padding: 5px;
+}
+.products__price {
+    text-align: center;
+}
+.products__buy-btn {
+    color: #FFF;
+    padding: 10px 15px;
+    background-color: $orange;
+    text-decoration: none;
+    
+    border-radius: 10px;
+    font-size: 14px;
+  
+    display:block;
+    font-family: 'open_sanssemibold';
+    
+}
+.products__info-bottom {
+   bottom: 10px;
+    left: 60px;
+   position: absolute;
+}
+.products__availability {
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    
+    
+    &:before {
+        content: '';
+        background: #60ac49;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        
+    }
+}
+}
+@import "_views/_grid-views";
+@import "_views/_lines-views";

@@ -1,0 +1,29 @@
+.attension {
+    margin-bottom: 20px;
+}
+.attension__text {
+    @include clearfix;
+}
+.attension__text {
+    p{
+        font-size: 14px;
+        line-height: 20px;
+        color:#111;
+        margin-bottom:20px;
+        text-align: justify;
+    }
+}
+.main-title{
+    font-family: 'open_sansbold';
+    font-size: 20px;
+    line-height: 22px;
+     margin-bottom: 30px;
+}
+.attension__text-left {
+    float: left;
+    width: 49%;
+}
+.attension__text-right {
+    float: right;
+    width: 49%;
+}

@@ -1,0 +1,24 @@
+.ui-slider-horizontal {
+    height: 3px;
+    background: $grey;
+    border-radius: 0;
+    border: 0 none;
+    margin-bottom: 14px;
+    
+    * {
+        outline: none !important;
+    }
+    
+    .ui-slider-range {
+        background: $orange;
+    }
+    
+    .ui-slider-handle {
+        @include get-sprite($mix-sprite,slider);
+        top:0;
+        border: 0 none;
+        border-radius:0;
+        margin-left: -4px;
+        cursor: pointer;
+    }
+}

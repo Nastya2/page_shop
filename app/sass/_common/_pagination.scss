@@ -1,0 +1,56 @@
+.pagination {
+    @include clearfix;
+}
+.pagination__list {
+    font-size: 0;
+    float: right;
+    margin-bottom: 70px;
+}
+.pagination__item{
+    display: inline-block;
+    vertical-align: middle;
+   margin-left: 5px;
+    &:first-child {
+        margin-left: 0px;
+    }
+    
+}
+.pagination__link{
+   width: 40px;
+    text-align: center;
+    display: block;
+   color: #2e2e2e;
+    background: #FFF;
+    border: 1px solid #dee1e4;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px;
+    
+    &:hover{
+        background: #e0e0e0;
+        
+    }
+    
+}
+
+
+
+
+ .pagination__item_prev .pagination__mark{
+  @include get-sprite($mix-sprite,arrow);
+   display: inline-block;
+     vertical-align: middle;
+     transform: rotate(180deg);
+        
+    
+}
+
+.pagination__item_next .pagination__mark{
+@include get-sprite($mix-sprite,arrow);
+ display: inline-block;
+vertical-align: middle;
+    
+    
+    
+}
+
