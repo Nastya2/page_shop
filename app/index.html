@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
-    <meta http-equiv="Content-Type" charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Главная страница </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
@@ -38,8 +38,8 @@
               <div class="logo__text">cooltech</div></a>
             <div class="search">
               <form class="search__form">
-                <input name="" type="text" placeholder="Что будем искать" class="seach__form-input">
-                <input name="" type="submit" value="Найти" class="seach__form-submit">
+                <input name="search" type="text" placeholder="Что будем искать" class="seach__form-input">
+                <input name="search-submit" type="submit" value="Найти" class="seach__form-submit">
               </form>
             </div>
             <div class="menu">
@@ -79,7 +79,7 @@
       </div>
       <div class="main-content">
         <div class="container">
-          <div class="sidebar">
+          <article class="sidebar">
             <ul class="categories__list">
               <li class="categories__item categories__item_"><a href="#" class="categories__link">Флагманы</a></li>
               <li class="categories__item categories__item_active"><a href="#" class="categories__link">Бюджетная линейка</a></li>
@@ -87,63 +87,53 @@
             <div class="filter">
               <ul class="filter__list">
                 <li class="filter__item">
-                  <div class="filter__title"><a href="#" class="filter__title-link">Наличие в магазинах</a></div>
+                  <div class="filter__title">
+                    <h2>Наличие в магазинах</h2>
+                  </div>
                   <div class="filter__content">
                     <ul class="filter__choose">
                       <li class="filter__choose-item">
                         <label class="filter__choose-label">
-                          <input name="location" type="radio" class="filter__choose-input">
-                          <div class="filter__choose-elem"></div>
-                          <div class="filter__choose-text">Во всех магазинах</div>
+                          <input name="location" type="radio" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Во всех магазинах</span>
                         </label>
                       </li>
                       <li class="filter__choose-item">
                         <label class="filter__choose-label">
-                          <input name="location" type="radio" class="filter__choose-input">
-                          <div class="filter__choose-elem"></div>
-                          <div class="filter__choose-text">В ближайшем ко мне магазине</div>
+                          <input name="location" type="radio" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">В ближайшем ко мне магазине</span>
                         </label>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li class="filter__item">
-                  <div class="filter__title"><a href="#" class="filter__title-link">Бренды</a></div>
+                  <div class="filter__title">
+                    <h2>Бренды</h2>
+                  </div>
                   <div class="filter__content">
                     <ul class="filter__choose filter__choose_checkboxes">
                       <li class="filter__choose-item">
                         <label class="filter__choose-label">
-                          <input name="location" type="checkbox" class="filter__choose-input">
-                          <div class="filter__choose-elem"></div>
-                          <div class="filter__choose-text">Lenovo</div>
+                          <input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Lenovo</span>
                         </label>
                       </li>
                       <li class="filter__choose-item">
                         <label class="filter__choose-label">
-                          <input name="location" type="checkbox" class="filter__choose-input">
-                          <div class="filter__choose-elem"></div>
-                          <div class="filter__choose-text">Apple</div>
+                          <input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Apple</span>
                         </label>
                       </li>
                       <li class="filter__choose-item">
                         <label class="filter__choose-label">
-                          <input name="location" type="checkbox" class="filter__choose-input">
-                          <div class="filter__choose-elem"></div>
-                          <div class="filter__choose-text">Samsung</div>
+                          <input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Samsung</span>
                         </label>
                       </li>
                       <li class="filter__choose-item">
                         <label class="filter__choose-label">
-                          <input name="location" type="checkbox" class="filter__choose-input">
-                          <div class="filter__choose-elem"></div>
-                          <div class="filter__choose-text">Asus</div>
+                          <input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Asus</span>
                         </label>
                       </li>
                       <li class="filter__choose-item">
                         <label class="filter__choose-label">
-                          <input name="location" type="checkbox" class="filter__choose-input">
-                          <div class="filter__choose-elem"></div>
-                          <div class="filter__choose-text">Motorola</div>
+                          <input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Motorola</span>
                         </label>
                       </li>
                     </ul>
@@ -151,17 +141,19 @@
                   </div>
                 </li>
                 <li class="filter__item">
-                  <div class="filter__title"><a href="#" class="filter__title-link">Цена</a></div>
+                  <div class="filter__title">
+                    <h2>Цена</h2>
+                  </div>
                   <div class="filter__content"> 
                     <div class="filter__slider">
                       <div class="filter__slider-displays">
                         <div class="filter__slider-left">
                           <div class="filter__slider-text">от</div>
-                          <input name="" type="text" placeholder="" class="filter__slider-input filter__slider-input_from">
+                          <input name="price" type="text" class="filter__slider-input filter__slider-input_from">
                         </div>
                         <div class="filter__slider-right"> 
                           <div class="filter__slider-text">до</div>
-                          <input name="" type="text" placeholder="" class="filter__slider-input filter__slider-input_to">
+                          <input name="price" type="text" class="filter__slider-input filter__slider-input_to">
                         </div>
                       </div>
                       <div data-min="0" data-max="30000" class="filter__slider-element"></div>
@@ -169,7 +161,9 @@
                   </div>
                 </li>
                 <li class="filter__item">
-                  <div class="filter__title"><a href="#" class="filter__title-link">Цвет</a></div>
+                  <div class="filter__title">
+                    <h2>Цвет</h2>
+                  </div>
                   <div class="filter__content"> 
                     <ul class="filter__colors">
                       <li class="filter__colors-item"><a href="#" style="background-color:#fff" class="filter__colors-link"></a></li>
@@ -192,42 +186,34 @@
                   </div>
                 </li>
                 <li class="filter__item">
-                  <div class="filter__title"><a href="#" class="filter__title-link">Операционная система</a></div>
+                  <div class="filter__title">
+                    <h2>Операционная система</h2>
+                  </div>
                   <div class="filter__content"> 
                     <ul class="filter__choose filter__choose_chackboxes">
                       <li class="filter__choose-item">
                         <label class="filter__choose-label">
-                          <input name="location" type="checkbox" class="filter__choose-input">
-                          <div class="filter__choose-elem"></div>
-                          <div class="filter__choose-text">Android</div>
+                          <input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Android</span>
                         </label>
                       </li>
                       <li class="filter__choose-item">
                         <label class="filter__choose-label">
-                          <input name="location" type="checkbox" class="filter__choose-input">
-                          <div class="filter__choose-elem"></div>
-                          <div class="filter__choose-text">IOS</div>
+                          <input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">IOS</span>
                         </label>
                       </li>
                       <li class="filter__choose-item">
                         <label class="filter__choose-label">
-                          <input name="location" type="checkbox" class="filter__choose-input">
-                          <div class="filter__choose-elem"></div>
-                          <div class="filter__choose-text">Windows Mobile</div>
+                          <input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Windows Mobile</span>
                         </label>
                       </li>
                       <li class="filter__choose-item">
                         <label class="filter__choose-label">
-                          <input name="location" type="checkbox" class="filter__choose-input">
-                          <div class="filter__choose-elem"></div>
-                          <div class="filter__choose-text">Symbian</div>
+                          <input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Symbian</span>
                         </label>
                       </li>
                       <li class="filter__choose-item">
                         <label class="filter__choose-label">
-                          <input name="location" type="checkbox" class="filter__choose-input">
-                          <div class="filter__choose-elem"></div>
-                          <div class="filter__choose-text">Custom</div>
+                          <input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Custom</span>
                         </label>
                       </li>
                     </ul>
@@ -236,7 +222,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </article>
           <div class="content">
             <div class="sort">
               <div class="sort__left">
@@ -270,11 +256,11 @@
                   <div class="products__item-inner">
                     <div class="products__left">
                       <div class="products__slideshow">
-                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="" class="products__slideshow-img"></a>
+                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="phone" class="products__slideshow-img"></a>
                           <ul class="products__slideshow-thumbs">
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
                           </ul>
                         </div>
                         <div class="products__article">
@@ -328,11 +314,11 @@
                   <div class="products__item-inner">
                     <div class="products__left">
                       <div class="products__slideshow">
-                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="" class="products__slideshow-img"></a>
+                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="phone" class="products__slideshow-img"></a>
                           <ul class="products__slideshow-thumbs">
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
                           </ul>
                         </div>
                         <div class="products__article">
@@ -386,11 +372,11 @@
                   <div class="products__item-inner">
                     <div class="products__left">
                       <div class="products__slideshow">
-                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="" class="products__slideshow-img"></a>
+                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="phone" class="products__slideshow-img"></a>
                           <ul class="products__slideshow-thumbs">
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
                           </ul>
                         </div>
                         <div class="products__article">
@@ -444,11 +430,11 @@
                   <div class="products__item-inner">
                     <div class="products__left">
                       <div class="products__slideshow">
-                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="" class="products__slideshow-img"></a>
+                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="phone" class="products__slideshow-img"></a>
                           <ul class="products__slideshow-thumbs">
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
                           </ul>
                         </div>
                         <div class="products__article">
@@ -502,11 +488,11 @@
                   <div class="products__item-inner">
                     <div class="products__left">
                       <div class="products__slideshow">
-                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="" class="products__slideshow-img"></a>
+                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="phone" class="products__slideshow-img"></a>
                           <ul class="products__slideshow-thumbs">
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
                           </ul>
                         </div>
                         <div class="products__article">
@@ -560,11 +546,11 @@
                   <div class="products__item-inner">
                     <div class="products__left">
                       <div class="products__slideshow">
-                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="" class="products__slideshow-img"></a>
+                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="phone" class="products__slideshow-img"></a>
                           <ul class="products__slideshow-thumbs">
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
                           </ul>
                         </div>
                         <div class="products__article">
@@ -618,11 +604,11 @@
                   <div class="products__item-inner">
                     <div class="products__left">
                       <div class="products__slideshow">
-                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="" class="products__slideshow-img"></a>
+                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="phone" class="products__slideshow-img"></a>
                           <ul class="products__slideshow-thumbs">
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
                           </ul>
                         </div>
                         <div class="products__article">
@@ -676,11 +662,11 @@
                   <div class="products__item-inner">
                     <div class="products__left">
                       <div class="products__slideshow">
-                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="" class="products__slideshow-img"></a>
+                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="phone" class="products__slideshow-img"></a>
                           <ul class="products__slideshow-thumbs">
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
                           </ul>
                         </div>
                         <div class="products__article">
@@ -734,11 +720,11 @@
                   <div class="products__item-inner">
                     <div class="products__left">
                       <div class="products__slideshow">
-                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="" class="products__slideshow-img"></a>
+                        <div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="img/phone-big.jpg" alt="phone" class="products__slideshow-img"></a>
                           <ul class="products__slideshow-thumbs">
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
-                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
+                            <li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="img/phone-small.png" alt="phone" class="products__slideshow-thumb-img"></a></li>
                           </ul>
                         </div>
                         <div class="products__article">

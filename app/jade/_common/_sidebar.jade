@@ -1,6 +1,6 @@
 
 
-.sidebar
+article.sidebar
 
     - var items = ["Флагманы","Бюджетная линейка"]
     ul.categories__list
@@ -12,7 +12,7 @@
         ul.filter__list
             li.filter__item
                 .filter__title
-                    a(href="#").filter__title-link Наличие в магазинах
+                    h2 Наличие в магазинах
                 .filter__content
                     ul.filter__choose
                         - var items = ["Во всех магазинах","В ближайшем ко мне магазине"]
@@ -20,11 +20,11 @@
                             li.filter__choose-item
                                 label.filter__choose-label
                                     input(name="location" type="radio").filter__choose-input
-                                    .filter__choose-elem
-                                    .filter__choose-text= item
+                                    span.filter__choose-elem
+                                    span.filter__choose-text= item
             li.filter__item
                 .filter__title
-                    a(href="#").filter__title-link Бренды
+                    h2 Бренды
                 .filter__content
                     ul.filter__choose.filter__choose_checkboxes
                         - var items = ["Lenovo","Apple","Samsung","Asus","Motorola"]
@@ -32,27 +32,27 @@
                             li.filter__choose-item
                                 label.filter__choose-label
                                     input(name="location" type="checkbox").filter__choose-input
-                                    .filter__choose-elem
-                                    .filter__choose-text= item   
+                                    span.filter__choose-elem
+                                    span.filter__choose-text= item   
                     .filter__reset--wrap    
                         a(href="").filter__reset Сбросить фильтр
             li.filter__item
                 .filter__title
-                    a(href="#").filter__title-link Цена
+                    h2 Цена
                 .filter__content 
                     .filter__slider
                         .filter__slider-displays
                             .filter__slider-left
                                .filter__slider-text от
-                               input(name="" type="text" placeholder="").filter__slider-input.filter__slider-input_from
+                               input(name="price" type="text" ).filter__slider-input.filter__slider-input_from
                             .filter__slider-right 
                                 .filter__slider-text до
-                                input(name="" type="text" placeholder="").filter__slider-input.filter__slider-input_to
+                                input(name="price" type="text" ).filter__slider-input.filter__slider-input_to
 
                         div(class="filter__slider-element" data-min="0" data-max= "30000")
             li.filter__item
                 .filter__title
-                    a(href="#").filter__title-link Цвет
+                    h2 Цвет
                 .filter__content 
                     ul.filter__colors
                         - var colors = ['fff','000','0a3153','ff1800','fff343','fb914a','92c37','000','fff','000','fff','000','92c37','92c37','92c37']
@@ -63,7 +63,7 @@
                         a(href="#").filter__reset Сбросить фильтр
             li.filter__item
                 .filter__title
-                    a(href="#").filter__title-link Операционная система
+                    h2 Операционная система
                 .filter__content 
                      ul.filter__choose.filter__choose_chackboxes
                         - var items = ["Android","IOS","Windows Mobile","Symbian","Custom"]
@@ -71,7 +71,7 @@
                             li.filter__choose-item
                                 label.filter__choose-label
                                     input(name="location" type="checkbox").filter__choose-input
-                                    .filter__choose-elem
-                                    .filter__choose-text= item   
+                                    span.filter__choose-elem
+                                    span.filter__choose-text= item   
                     .filter__reset--wrap    
                         a(href="").filter__reset Сбросить фильтр

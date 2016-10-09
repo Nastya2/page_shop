@@ -8,8 +8,7 @@ $grey:#dee1e4;
 
 html {
 	width:100%;
-	
-    font: 18px $body-font;
+	font: 18px $body-font;
 }
 
 body {
@@ -18,11 +17,12 @@ body {
 	width:100%;
 	height:100% !important;
     background-color: #f4f4f4;
-	
 }
+
 * {
     box-sizing: border-box;
 }
+
 .container {
     margin: 0 auto;
     position: relative;
@@ -30,21 +30,34 @@ body {
     width: $container-width;
 	
 }
+
+h1 {
+    font-family: 'open_sanssemibold';
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
 img{
     max-height: 100%;
     max-width: 100%;
 }
+
 .wrapper {
     position: relative;
     min-height: 100%;
     height: auto !important;
     height: 100%;
     overflow: hidden;
-	
-    max-width: 100%;
+	max-width: 100%;
    
-
-	&:after {
+    &:after {
 		display: block;
 		position: relative;
 		height: $footer-height;
@@ -74,8 +87,6 @@ p {
 
 footer {
 	position: relative;
-	
 	height: $footer-height;
-    
 }
 
