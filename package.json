@@ -10,7 +10,6 @@
     "gulp-imagemin": "^3.0.1",
     "gulp-jade": "^1.1.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^2.2.0",
     "imagemin-pngquant": "^5.0.0"
   }
 }
