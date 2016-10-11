@@ -1,12 +1,12 @@
 
 
-article.sidebar
+.sidebar
 
     - var items = ["Флагманы","Бюджетная линейка"]
     ul.categories__list
 
         each item in items
-            li(class="categories__item categories__item_" + ((item == "Бюджетная линейка")? '' + 'active' : ''))
+            li(class="categories__item categories__item_" + ((item == "Бюджетная линейка") ? '' + 'active' : ''))
                 a(href="#").categories__link=item
     .filter
         ul.filter__list
