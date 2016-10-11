@@ -7,8 +7,6 @@
     background: #FFFFFF;
     padding: 30px 0px;
     border-bottom: 2px solid #ebedef;
-    @include clearfix;
-    
 }
 .socials__item {
     display: inline-block;
@@ -83,11 +81,7 @@ $socials: vk, fb, tw;
  /*----------------header-bottom------------------------------*/
 .header-bottom {
     background-color: #f4f4f4;
-    padding: 30px 0px;
-    @include clearfix;
-   
-    
-    
+    padding: 30px 0px; 
 }
 .logo{
     float: left;

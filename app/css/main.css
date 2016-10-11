@@ -23,6 +23,13 @@ body {
   position: relative;
   width: 1110px;
 }
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
 
 h1 {
   font-family: 'open_sanssemibold';
@@ -90,13 +97,6 @@ footer {
   background: #FFFFFF;
   padding: 30px 0px;
   border-bottom: 2px solid #ebedef;
-}
-.header-top:before, .header-top:after {
-  content: "";
-  display: table;
-}
-.header-top:after {
-  clear: both;
 }
 
 .socials__item {
@@ -209,13 +209,6 @@ footer {
 .header-bottom {
   background-color: #f4f4f4;
   padding: 30px 0px;
-}
-.header-bottom:before, .header-bottom:after {
-  content: "";
-  display: table;
-}
-.header-bottom:after {
-  clear: both;
 }
 
 .logo {
@@ -604,14 +597,6 @@ footer {
   border-radius: 0;
   margin-left: -4px;
   cursor: pointer;
-}
-
-.main-content:before, .main-content:after {
-  content: "";
-  display: table;
-}
-.main-content:after {
-  clear: both;
 }
 
 .content {
@@ -1122,14 +1107,6 @@ footer {
 }
 .products__list_direct .products__item-inner {
   padding-top: 15px;
-}
-
-.pagination:before, .pagination:after {
-  content: "";
-  display: table;
-}
-.pagination:after {
-  clear: both;
 }
 
 .pagination__list {

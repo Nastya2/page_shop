@@ -26,9 +26,8 @@ body {
 .container {
     margin: 0 auto;
     position: relative;
-    
     width: $container-width;
-	
+    @include clearfix;
 }
 
 h1 {
