@@ -2,3 +2,5 @@
 2. cd site
 3. npm i
 4. gulp 
+
+https://nastya2.github.io/hosting.github.io/page-shop/#
